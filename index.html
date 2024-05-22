@@ -4,39 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sreejan Datta - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FDFFED;
+            color: #030712;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #030712;
+            color: white;
+        }
+
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .text {
+            flex: 1;
+            min-width: 300px;
+            margin: 20px;
+        }
+
+        .text h1 {
+            font-size: 36px;
+        }
+
+        .text p {
+            margin: 20px 0;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            color: white;
+            display: inline-block;
+        }
+
+        .btn-hello {
+            background: linear-gradient(to right, #FF5E62, #FF9966);
+        }
+
+        .btn-portfolio {
+            border: 2px solid #030712;
+            color: #030712;
+            background: white;
+        }
+
+        .image {
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .image img {
+            max-width: 100%;
+            border-radius: 50%;
+        }
+
+        @media (max-width: 768px) {
+            .header, .container {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
+    <header class="header">
+        <div class="logo">Sreejan Datta</div>
         <nav>
-            <h1 class="logo">Sreejan Datta</h1>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="#">Works</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <a href="#" class="btn">Let's Talk</a>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Works</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
         </nav>
     </header>
-    <section class="hero">
-        <div class="hero-content">
-            <div class="intro">
-                <h2>🚀 Hey there,</h2>
-                <h2>It's Sreejan Datta.</h2>
-                <p>Welcome to my creative corner! I'm Sreejan Datta, a passionate aspiring Data Scientist and Cybersecurity Expert. Explore my world of tech and innovation.</p>
-                <div class="buttons">
-                    <a href="about.html" class="btn primary">Say Hello</a>
-                    <a href="#" class="btn">My Portfolio</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="profile-picture.jpg" alt="Sreejan Datta">
+    <main class="container">
+        <div class="text">
+            <h1>👋 Hey there, <br> It's Sreejan Datta.</h1>
+            <p>Welcome to my creative corner! I'm Sreejan Datta, a passionate UI/UX designer with three years of experience crafting digital experiences that are both visually stunning and user-friendly.</p>
+            <div class="buttons">
+                <a href="#" class="btn-hello">Say Hello</a>
+                <a href="#" class="btn-portfolio">My Portfolio</a>
             </div>
         </div>
-    </section>
-    <script src="scripts.js"></script>
+        <div class="image">
+            <img src="/mnt/data/IMG_20230713_140912_110.jpg" alt="Sreejan Datta">
+        </div>
+    </main>
 </body>
 </html>
