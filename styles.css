@@ -34,7 +34,7 @@ nav ul li a {
 }
 
 .hero {
-    background: url('hero-bg.jpg') no-repeat center center/cover;
+    background: url('https://via.placeholder.com/1200x800') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -45,6 +45,9 @@ nav ul li a {
 
 .hero-content {
     max-width: 600px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .hero-content h2 {
@@ -70,21 +73,46 @@ nav ul li a {
     background: #555555;
 }
 
-section.about {
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background: #ffffff;
+}
+
+.feature {
+    text-align: center;
+    max-width: 200px;
+}
+
+.feature img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about {
     padding: 40px 20px;
     max-width: 800px;
     margin: 0 auto;
     background: #ffffff;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
-section.about h2, section.about h3 {
+.about img.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.about h2, .about h3 {
     color: #4CAF50;
 }
 
-section.about ul {
+.about ul {
     list-style-type: disc;
     padding-left: 20px;
+    text-align: left;
 }
 
 footer {
@@ -96,4 +124,5 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
 
